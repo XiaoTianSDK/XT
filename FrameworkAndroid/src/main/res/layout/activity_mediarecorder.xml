@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/id_0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.android.basicmediadecoder.MediaRecorderSample" >
+
+    <TextureView
+        android:id="@id/id_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@id/id_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#66000000"
+            android:gravity="center_vertical"
+            android:padding="0dp" >
+
+            <ImageButton
+                android:id="@id/id_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:background="@null"
+                android:contentDescription="@string/content_notfound_xiaotian"
+                android:onClick="onBackClick"
+                android:padding="10dp"
+                android:src="@drawable/btn_back_white" />
+
+            <TextView
+                android:id="@id/id_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textColor="@color/color_text_white_xiaotian" />
+
+            <ImageButton
+                android:id="@id/id_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:contentDescription="@string/content_notfound_xiaotian"
+                android:onClick="onSwitchClick"
+                android:padding="10dp"
+                android:src="@drawable/btn_camera_overturn"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@id/id_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_2"
+            android:background="@null"
+            android:contentDescription="@string/content_notfound_xiaotian"
+            android:onClick="onClickFlash"
+            android:padding="10dp"
+            android:src="@drawable/scan_flashlight_normal"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@id/id_7"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/id_2"
+            android:layout_marginRight="10dp"
+            android:text="00:00"
+            android:textColor="@color/color_text_white_xiaotian" />
+
+        <TextView
+            android:id="@id/id_8"
+            style="?android:attr/textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/id_7"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/shape_cycle_red"
+            android:drawablePadding="5dp"
+            android:text="REC"
+            android:textColor="#FF0000" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@id/id_9"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:onClick="onCaptureClick"
+        android:text="@string/capture_start" />
+
+    <ImageButton
+        android:id="@id/id_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:contentDescription="@string/content_notfound_xiaotian"
+        android:onClick="onPlayClick"
+        android:src="@drawable/play_video_white"
+        android:visibility="invisible" />
+
+</FrameLayout>

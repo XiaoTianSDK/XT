@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/view_model_toptoolbar_root_xiaotian"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    android:background="@drawable/background_navigator_xiaotian"
+    android:orientation="horizontal"
+    android:padding="0dp" >
+
+    <ImageButton
+        android:id="@id/view_model_toptoolbar_button_left_xiaotian"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|left"
+        android:background="@null"
+        android:clickable="true"
+        android:contentDescription="@string/content_notfound_xiaotian"
+        android:drawingCacheQuality="auto"
+        android:onClick="toolbarBackOnclick"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/button_allow_back_xiaotian"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@id/view_model_toptoolbar_title_xiaotian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:clickable="true"
+        android:onClick="toolbarTitleOnclick"
+        android:text="@string/content_notfound_xiaotian"
+        android:textColor="@color/color_text_white_xiaotian"
+        android:textSize="22sp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@id/view_model_toptoolbar_button_right_xiaotian"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|right"
+        android:background="@null"
+        android:clickable="true"
+        android:contentDescription="@string/content_notfound_xiaotian"
+        android:drawingCacheQuality="auto"
+        android:onClick="toolbarForwardOnclick"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="22sp" />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 顶部可滚动 Tab -->
+
+    <com.jjobes.slidedatetimepicker.SlidingTabLayout
+        android:id="@id/id_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- 日期,时间翻页 -->
+
+    <view
+        android:id="@id/id_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        class="com.jjobes.slidedatetimepicker.SlideDateTimeDialogFragment$CustomViewPager" />
+
+    <!--
+        The horizontal separator that runs across the top of
+        the button bar
+    -->
+
+    <View
+        android:id="@id/id_2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ff464646" />
+
+    <!-- Footer button bar -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@id/id_3"
+            style="@style/StyleXiaoTian.Button.Dialog.Light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@android:string/cancel" />
+
+        <!-- The vertical divider line between the two buttons -->
+
+        <View
+            android:id="@id/id_4"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#ff464646" />
+
+        <Button
+            android:id="@id/id_5"
+            style="@style/StyleXiaoTian.Button.Dialog.Light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@android:string/ok" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- dialog style -->
+    <style name="StyleXiaoTian"></style>
+
+    <style name="StyleXiaoTian.Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="StyleXiaoTian.Dialog.NoActionBar" parent="StyleXiaoTian.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="StyleXiaoTian.Dialog.NoActionBar.Light" parent="StyleXiaoTian.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="StyleXiaoTian.TextView.normal" parent="android:style/Theme.Dialog">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="StyleXiaoTian.Button.Dialog" parent="@android:style/Widget.Button"></style>
+
+    <style name="StyleXiaoTian.Button.Dialog.Light" parent="@android:style/Widget.Button"></style>
+
+    <style name="style_dialog_theme_base_xiaotian" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="StyleXiaoTian.ProgressBar.Small" parent="@style/Widget.AppCompat.ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_dialog_theme_xiaotian" parent="@style/style_dialog_theme_base_xiaotian">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="style_dialog_theme_title_xiaotian" parent="@style/style_dialog_theme_base_xiaotian">
+        <item name="android:windowBackground">@drawable/background_dialog_1_xiaotian</item>
+    </style>
+
+    <!-- Dialog no title -->
+    <style name="style_dialog_theme_notitle_xiaotian" parent="@style/style_dialog_theme_base_xiaotian">
+        <item name="android:windowBackground">@drawable/background_alert_notitle_xiaotian</item>
+    </style>
+
+    <style name="style_animation_dialog_xiaotian">
+        <item name="android:windowEnterAnimation">@anim/set_push_top_in_dialog</item>
+        <item name="android:windowExitAnimation">@anim/set_push_top_out_dialog</item>
+    </style>
+
+    <style name="view_model_blockview_header_xiaotian">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/color_text_white_xiaotian</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="view_model_blockview_secondheader_xiaotian">
+        <item name="android:textSize">9.0sp</item>
+        <item name="android:textColor">@color/color_text_white_xiaotian</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="view_model_blockview_footer_xiaotian">
+        <item name="android:textSize">9.0sp</item>
+        <item name="android:textColor">@color/color_text_white_xiaotian</item>
+    </style>
+
+    <style name="view_model_blockview_badge_xiaotian">
+        <item name="android:textSize">9.0sp</item>
+        <item name="android:textColor">@color/color_text_white_xiaotian</item>
+    </style>
+    <!-- Widget -->
+    <style name="style_dialog_button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textColor">@color/color_text_black_xiaotian</item>
+        <item name="android:background">@drawable/selector_button_positive_xiaotian</item>
+    </style>
+
+    <style name="style_edittext_input">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!-- 4.0以上显示光标 -->
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColorHint">@color/color_text_hint_xiaotian</item>
+        <item name="android:textColor">@color/color_text_black_xiaotian</item>
+    </style>
+
+</resources>

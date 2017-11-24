@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 包含字符串数组的参数字符串 -->
+    <plurals name="plural_pattern">
+
+        <!-- "one"(for 1), "few"(for 2 to 4), and "other"for the res -->
+        <!-- 无参数::quantity = 1 -->
+        <item quantity="one">This is the first plural.</item>
+        <!-- 有参数::quantity = 其他 -->
+        <item quantity="other">This is the %d plural.</item>
+    </plurals>
+
+</resources>

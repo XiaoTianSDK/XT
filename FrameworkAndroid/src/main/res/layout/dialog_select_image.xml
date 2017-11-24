@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dialog_0"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <Button
+        android:id="@id/id_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/string_takepicture"
+        android:textColor="@color/color_text_black_xiaotian"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@id/id_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/string_select_image_from_folder"
+        android:textColor="@color/color_text_black_xiaotian"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@id/id_nagetive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/string_negative_xiaotian"
+        android:textColor="@color/color_text_black_xiaotian"
+        android:textSize="16sp" />
+
+</LinearLayout>

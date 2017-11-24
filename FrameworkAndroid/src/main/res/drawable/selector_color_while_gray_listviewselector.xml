@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Lineary Layout Color Selector -->
+    <item android:state_focused="true" android:state_pressed="false">
+        <!-- ListView Selector Shape :: 必须声明为shape:实体绘图对象solid:填充实体 -->
+<shape android:shape="rectangle">
+            <solid android:color="@color/color_text_white_xiaotian" />
+        </shape></item>
+    <item android:state_pressed="true">
+        <!-- ListView Selector Shape -->
+<shape android:shape="rectangle">
+            <solid android:color="@color/color_text_gray_xiaotian" />
+        </shape></item>
+
+</selector>

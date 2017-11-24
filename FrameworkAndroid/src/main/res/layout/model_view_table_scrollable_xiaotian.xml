@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- Left Top View -->
+
+        <view
+            android:id="@id/id_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.xiaotian.framework.view.ViewTableScrollAble$ViewTopLeft" />
+        <!-- Title Column -->
+
+        <view
+            android:id="@id/id_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.xiaotian.framework.view.ViewTableScrollAble$TitleViewColumn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- Title Row -->
+
+        <view
+            android:id="@id/id_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.xiaotian.framework.view.ViewTableScrollAble$TitleViewRow" />
+
+        <!-- Title Scroll Data Table -->
+
+        <view
+            android:id="@id/id_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.xiaotian.framework.view.ViewTableScrollAble$ScrollView" >
+
+            <view
+                android:id="@id/id_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                class="com.xiaotian.framework.view.ViewTableScrollAble$HorizontalScrollView" >
+
+                <!-- inner class view -->
+
+                <view
+                    android:id="@id/id_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    class="com.xiaotian.framework.view.ViewTableScrollAble$ViewTable" />
+            </view>
+        </view>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 布局颜色选择器::必须把color参数设置为子项 -->
+    <item android:state_pressed="false">
+        <!-- Color -->
+<color android:color="@color/color_text_white_xiaotian" />
+    </item>
+    <item android:state_pressed="true">
+        <!-- Color -->
+<color android:color="@color/color_text_gray_xiaotian" />
+    </item>
+
+</selector>

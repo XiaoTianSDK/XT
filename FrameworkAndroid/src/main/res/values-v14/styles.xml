@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AppTheme.Light" parent="android:Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="WidthActionBar" parent="android:Theme.Holo"></style>
+
+    <style name="NoActionBar" parent="android:Theme.Holo.NoActionBar"></style>
+
+    <style name="NoActionBar.Wallpaper" parent="android:Theme.Holo.Wallpaper.NoTitleBar"></style>
+
+    <style name="FullscreenTheme" parent="android:Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+</resources>

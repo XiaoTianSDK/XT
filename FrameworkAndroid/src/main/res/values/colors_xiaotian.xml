@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- xiaotian frame color -->
+    <color name="color_text_white_xiaotian">#FFFFFF</color>
+    <color name="color_text_black_xiaotian">#000000</color>
+    <color name="color_text_gray_xiaotian">#FAFAFA</color>
+
+    <!-- dialog color -->
+    <color name="color_dialog_split_line_xiaotian">#e8dad8</color>
+    <color name="color_text_hint_xiaotian">#dcdcdc</color>
+
+    <!-- View pager Scroll Tab -->
+    <color name="color_view_scroll_tab_normal_xiaotian">#9dd64b</color>
+    <color name="color_view_scroll_tab_highlight_xiaotian">#FFFFFF</color>
+    <color name="color_holo_blue">#34B8E9</color>
+
+</resources>

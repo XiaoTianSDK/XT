@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@id/id_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFA34"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@id/id_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/content_notfound_xiaotian"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@id/id_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/content_notfound_xiaotian"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <com.xiaotian.framework.view.ViewScrollView
+        android:id="@id/id_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@id/id_e"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FAFAFA" />
+
+                <ImageButton
+                    android:id="@id/id_i0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@android:color/transparent"
+                    android:clickable="true"
+                    android:contentDescription="@string/content_notfound_xiaotian"
+                    android:minWidth="80dp"
+                    android:onClick="onClickAddCode"
+                    android:padding="15dp"
+                    android:src="@drawable/button_positive_normal_xiaotian" />
+            </LinearLayout>
+
+            <com.xiaotian.framework.view.ViewHorizontalScrollView
+                android:id="@id/id_f"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TableLayout
+                    android:id="@id/id_g"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TableRow
+                        android:id="@id/id_h"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <ImageButton
+                            android:id="@id/id_i1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:contentDescription="@string/content_notfound_xiaotian"
+                            android:onClick="onClickAddColor"
+                            android:padding="15dp"
+                            android:src="@drawable/button_positive_normal_xiaotian" />
+                    </TableRow>
+                </TableLayout>
+            </com.xiaotian.framework.view.ViewHorizontalScrollView>
+        </LinearLayout>
+    </com.xiaotian.framework.view.ViewScrollView>
+
+</LinearLayout>

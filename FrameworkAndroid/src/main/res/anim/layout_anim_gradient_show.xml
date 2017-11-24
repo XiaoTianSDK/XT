@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/AnimationGradientShow"
+    android:animation="@anim/set_gradient_show"
+    android:delay="100%" />

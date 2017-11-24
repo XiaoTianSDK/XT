@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:xiaotian="http://schemas.framework.xiaotian.com/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.xiaotian.framework.view.ViewToggleButton
+        android:id="@id/id_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        xiaotian:checkable="false"
+        xiaotian:checkedImage="@drawable/button_positive_highlight_xiaotian"
+        xiaotian:uncheckImage="@drawable/button_positive_highlight_xiaotian"/>
+
+    <com.xiaotian.framework.view.ViewFrameLayoutPullRefreshPinnedSectionListView
+        android:id="@id/ViewListViewPullRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay"
+        android:showDividers="none"
+        xiaotian:backgroundErrorMessageConnect="#66000000"
+        xiaotian:formatDateHeader="最后更新时间:%1$Ty-%&lt;Tm-%&lt;Td %&lt;TH:%&lt;TM"
+        xiaotian:headerDateTextColor="#6c6c70"
+        xiaotian:headerDateTextSize="10sp"
+        xiaotian:headerTextColor="#6c6c70"
+        xiaotian:headerTextSize="12sp"
+        xiaotian:mode="1"
+        xiaotian:pullStringHeader="下拉刷新"
+        xiaotian:refreshingStringHeader="加载中"
+        xiaotian:releasedStringHeader="释放刷新"
+        xiaotian:textColorEmpty="#6c6c70"
+        xiaotian:textColorErrorMessage="#6c6c70"
+        xiaotian:textColorErrorMessageConnect="#FFFFFF"
+        xiaotian:textColorLoading="#6c6c70"
+        xiaotian:textColorLoadingMore="#6c6c70"
+        xiaotian:textEmpty="还没有数据,点击页面重新加载"
+        xiaotian:textErrorMessage="网络连接失败,点击页面重试"
+        xiaotian:textErrorMessageConnect="无网络访问 检查网络设置"
+        xiaotian:textLoading="正在加载,请稍后..."
+        xiaotian:textLoadingMore="加载更多数据..."
+        xiaotian:textSizeEmpty="14sp"
+        xiaotian:textSizeErrorMessage="14sp"
+        xiaotian:textSizeErrorMessageConnect="14sp"
+        xiaotian:textSizeLoading="14sp"
+        xiaotian:textSizeLoadingMore="12sp"/>
+</RelativeLayout>

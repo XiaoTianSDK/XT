@@ -1,0 +1,199 @@
+<resources>
+
+    <!--
+    Common Attribute
+    <attr name="backgroundImage" format="reference" />
+    <attr name="backgroundColor" format="reference|color" />
+    <attr name="marginLeft" format="dimension" />
+    <attr name="marginTop" format="dimension" />
+    <attr name="marginRight" format="dimension" />
+    <attr name="marginBottom" format="dimension" />
+    <attr name="background" format="reference|color" />
+    <attr name="borderSize" format="dimension" />
+    <attr name="textSize" format="dimension" />
+    <attr name="textColor" format="reference|color" />
+    <attr name="textPadding" format="dimension" />
+
+    View Toggle Button
+    <declare-styleable name="model_view_togglebutton_xiaotian">
+        <attr name="uncheckImage" format="reference|color" />
+        <attr name="checkedImage" format="reference|color" />
+        <attr name="checkable" format="boolean" />
+        <attr name="checked" format="boolean" />
+    </declare-styleable>
+    View Border Ground
+
+
+    View Table TopLeft
+    <attr name="borderPaddingLeft" format="dimension" />
+    <attr name="borderPaddingTop" format="dimension" />
+    <attr name="borderPaddingRight" format="dimension" />
+    <attr name="borderPaddingBottom" format="dimension" />
+
+    <declare-styleable name="model_view_table">
+        <attr name="borderColor" />
+        <attr name="borderLeft" format="dimension" />
+        <attr name="borderTop" format="dimension" />
+        <attr name="borderRight" format="dimension" />
+        <attr name="borderBottom" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="model_view_table_topleft">
+        <attr name="textLeft" />
+        <attr name="textRight" />
+        <attr name="borderColor" />
+        <attr name="borderSize" />
+        <attr name="textSize" />
+        <attr name="textColor" />
+        <attr name="borderPaddingLeft" />
+        <attr name="borderPaddingTop" />
+        <attr name="borderPaddingRight" />
+        <attr name="borderPaddingBottom" />
+        <attr name="textLeftPaddingLeft" format="dimension" />
+        <attr name="textLeftPaddingBottom" format="dimension" />
+        <attr name="textRightPaddingTop" format="dimension" />
+        <attr name="textRightPaddingRight" format="dimension" />
+    </declare-styleable>
+
+    View Scroll Tab Pager
+    <declare-styleable name="model_view_scrolltabpager_xiaotian">
+        <attr name="toolbarBackground" format="reference|color" />
+        <attr name="textColorNormal" format="reference|color" />
+        <attr name="textColorHighlight" format="reference|color" />
+        <attr name="textDrawableBottom" format="reference|color" />
+        <attr name="textSize" />
+        <attr name="textMarginTop" format="dimension" />
+        <attr name="textMarginBottom" format="dimension" />
+        <attr name="titlePaddingLeft" format="dimension" />
+        <attr name="titlePaddingRight" format="dimension" />
+        <attr name="textDrawablePadding" format="dimension" />
+    </declare-styleable>
+
+    View Top Bar
+    <attr name="textLeft" format="reference|string" />
+    <attr name="textRight" format="reference|string" />
+
+    <declare-styleable name="model_view_toptoolbar_xiaotian">
+        <attr name="textTitle" format="reference|string" />
+        <attr name="iconLeft" format="reference" />
+        <attr name="iconRight" format="reference" />
+        <attr name="background" />
+    </declare-styleable>
+
+    Declare Custom Attributes for ViewTableScrollAble
+    <attr name="borderColor" format="reference|color" />
+    <attr name="textSizeTitle" format="dimension" />
+    <attr name="textSizeTable" format="dimension" />
+    <attr name="borderWidth" format="dimension" />
+    <attr name="onClick" format="string" />
+
+    <declare-styleable name="model_view_table_xiaotian">
+        <attr name="backgroundColorTitleColumn" format="reference|color" />
+        <attr name="backgroundColorTitleBinge" format="reference|color" />
+        <attr name="backgroundColorTitleRow" format="reference|color" />
+        <attr name="textColorTitleColumn" format="reference|color" />
+        <attr name="backgroundColorTable" format="reference|color" />
+        <attr name="textColorTitleRow" format="reference|color" />
+        <attr name="textPaddingLeftColumn" format="dimension" />
+        <attr name="textColorBinge" format="reference|color" />
+        <attr name="textColorTable" format="reference|color" />
+        <attr name="textPaddingTopColumn" format="dimension" />
+        <attr name="textPaddingTopRow" format="dimension" />
+        <attr name="textSizeTitle" />
+        <attr name="textSizeTable" />
+        <attr name="borderColor" />
+        <attr name="borderWidth" />
+    </declare-styleable>
+
+    Declare custom attributes for viewBlock
+    <declare-styleable name="model_viewblock_xiaotian">
+        <attr name="secondHeaderSize" format="dimension" />
+        <attr name="backgroundIcon" format="reference" />
+        <attr name="backgroundView" format="reference" />
+        <attr name="footerImage" format="reference" />
+        <attr name="headerSize" format="dimension" />
+        <attr name="footerSize" format="dimension" />
+        <attr name="secondHeader" format="string" />
+        <attr name="badgeNumber" format="integer" />
+        <attr name="badgeMarginTop" format="dimension" />
+        <attr name="badgeMarginRight" format="dimension" />
+        <attr name="header" format="string" />
+        <attr name="footer" format="string" />
+        <attr name="backgroundColor" />
+        <attr name="backgroundImage" />
+        <attr name="marginBottom" />
+        <attr name="marginRight" />
+        <attr name="marginLeft" />
+        <attr name="marginTop" />
+        <attr name="onClick" />
+        <attr name="iconAlignment">
+            <flag name="left" value="1" />
+            <flag name="top" value="2" />
+            <flag name="right" value="4" />
+            <flag name="bottom" value="8" />
+            <flag name="center" value="16" />
+        </attr>
+        <attr name="iconMargin" format="dimension" />
+        <attr name="iconMarginLeft" format="dimension" />
+        <attr name="iconMarginTop" format="dimension" />
+        <attr name="iconMarginRight" format="dimension" />
+        <attr name="iconMarginBottom" format="dimension" />
+        <attr name="headerColor" format="reference|color" />
+        <attr name="headerAlignment">
+            <flag name="left" value="1" />
+            <flag name="top" value="2" />
+            <flag name="right" value="4" />
+            <flag name="bottom" value="8" />
+            <flag name="center" value="16" />
+        </attr>
+        <attr name="headerMargin" format="dimension" />
+        <attr name="headerMarginLeft" format="dimension" />
+        <attr name="headerMarginTop" format="dimension" />
+        <attr name="headerMarginRight" format="dimension" />
+        <attr name="headerMarginBottom" format="dimension" />
+        <attr name="secondHeaderColor" format="reference|color" />
+        <attr name="secondHeaderAlignment">
+            <flag name="left" value="1" />
+            <flag name="top" value="2" />
+            <flag name="right" value="4" />
+            <flag name="bottom" value="8" />
+            <flag name="center" value="16" />
+        </attr>
+        <attr name="secondHeaderMargin" format="dimension" />
+        <attr name="secondHeaderMarginLeft" format="dimension" />
+        <attr name="secondHeaderMarginTop" format="dimension" />
+        <attr name="secondHeaderMarginRight" format="dimension" />
+        <attr name="secondHeaderMarginBottom" format="dimension" />
+        <attr name="footerColor" format="reference|color" />
+        <attr name="footerAlignment">
+            <flag name="left" value="1" />
+            <flag name="top" value="2" />
+            <flag name="right" value="4" />
+            <flag name="bottom" value="8" />
+            <flag name="center" value="16" />
+        </attr>
+        <attr name="footerMargin" format="dimension" />
+        <attr name="footerMarginLeft" format="dimension" />
+        <attr name="footerMarginTop" format="dimension" />
+        <attr name="footerMarginRight" format="dimension" />
+        <attr name="footerrMarginBottom" format="dimension" />
+        <attr name="blockSizeType">
+            <enum name="square" value="0" />
+            <enum name="rectangle" value="1" />
+        </attr>
+        <attr name="baseHeightAligned">
+            <enum name="square" value="0" />
+            <enum name="rectangle" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ViewDivider">
+        <attr name="color" format="color" />
+        <attr name="dashLength" format="dimension" />
+        <attr name="dashGap" format="dimension" />
+        <attr name="dashThickness" format="dimension" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+    -->
+</resources>

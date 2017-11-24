@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 定义 XML Attribute Schemas 命名空间 -->
+    <string name="XIAOTIAN_NS">http://schemas.framework.xiaotian.com/android</string>
+    <!-- Android Attribute Schemas 命名空间 -->
+    <string name="GLOBAL_NS">http://schemas.android.com/apk/res/android</string>
+    <!--  -->
+    <string name="content_notfound_xiaotian">Content Not Founded</string>
+    <string name="string_positive_xiaotian">确定</string>
+    <string name="string_negative_xiaotian">取消</string>
+    <string name="string_hint_input_xiaotian">请输入内容&#8230;</string>
+
+    <!-- date time pattern -->
+    <string name="string_pattern_date_dot_simple_xiaotian" formatted="false">%1$tY.%&lt;tm.%&lt;te</string>
+    <string name="string_pattern_date_colon_simple_xiaotian" formatted="false">%1$tY:%&lt;tm:%&lt;te</string>
+    <string name="string_pattern_date_dot_xiaotian" formatted="false">%1$tY.%&lt;tm.%&lt;td</string>
+    <string name="string_pattern_date_colon_xiaotian" formatted="false">%1$tY:%&lt;tm:%&lt;td</string>
+
+    <!-- Pull Reflash -->
+    <string name="pull_to_refresh_pull_down_label">滑动刷新</string>
+    <string name="pull_to_refresh_release_label">释放刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中</string>
+    <string name="pull_to_refresh_tap_label">点击刷新</string>
+    <string name="pull_to_refresh_finish">加载已完成,无更多数据</string>
+    <string name="pull_to_refresh_loding">加载更多数据</string>
+    <string name="network_notavailable">目前网络连接不可用</string>
+    <string name="string_empty_data_xiaotian">暂无数据</string>
+    <string name="string_success_operation">操作成功!</string>
+    <string name="string_success_upload_vcr">恭喜你,视频上传成功!</string>
+    <string name="string_failed_operation">操作失败.</string>
+    <string name="string_refreshed_date_pattern">最近更新:%1$tY.%1$tm.%1$td %1$tH:%1$tM</string>
+    <!--  -->
+    <string name="string_select_image_from_folder">从相册选择</string>
+    <string name="string_capture_video">相机录制</string>
+    <string name="string_select_video">选择视频</string>
+    <string name="string_takepicture">相机拍照</string>
+    <string name="string_select_image">选择照片</string>
+    <!--  -->
+    <string name="string_dialog_error_file_image_invalid">您选择的照片无效,请重新选择!</string>
+    <string name="string_dialog_error_file_video_invalid">您选择的视频无效,请重新选择!</string>
+    <string name="string_network_invalid">当前网络不可用</string>
+    <string name="string_downloading_newversion">正在下载最新版本&#8230;</string>
+    <string name="string_notification_downloading_start">正在后台下载&#8230;</string>
+    <string name="string_notification_downloading_finish">下载已完成,点击打开</string>
+    <string name="string_notification_downloading_success">下载已完成</string>
+    <string name="string_downloading">正在下载,请稍后&#8230;</string>
+    <string name="Hint">提示</string>
+    <string name="Ok">成功</string>
+    <string name="Error">错误</string>
+    <string name="processing">"正在处理，请稍候&#8230;"</string>
+    <string name="day">天</string>
+    <string name="hour">小时</string>
+    <string name="minute">分</string>
+    <string name="capture_start">开始拍摄</string>
+    <string name="capture_stop">停止拍摄</string>
+    <string name="waiting_capturing">正在拍摄 请稍后</string>
+    <string name="string_loading_waitting">加载数据,请稍后...</string>
+    <string name="string_connectfail_reload">网络连接失败 点击屏幕重新加载</string>
+    <string name="string_dataempty_reload">没有数据 点击屏幕刷新</string>
+    <string name="string_connectfail_checksetter">网络已断开 检查设置</string>
+    <!-- Pattern -->
+    <string name="edittext_digits_integer">0123456789</string>
+    <string name="edittext_digits_letter">abcdefghijklmnopqrstuvwsyzABCDEFGHIJKLMNOPQRSTUVWSYZ</string>
+    <string name="edittext_digits_letter_integer">0123456789abcdefghijklmnopqrstuvwsyzABCDEFGHIJKLMNOPQRSTUVWSYZ</string>
+
+</resources>

@@ -1,0 +1,110 @@
+// 应用编译插件: Android 代码库编译器
+apply plugin: 'com.android.library'
+
+version '1.7'
+group 'com.xiaotian.framework'
+
+// Android 属性声明
+android {
+    // 编译器SDK版本
+    compileSdkVersion 23
+    // 构造工具版本
+    buildToolsVersion '25.0.0'
+
+    // Android 默认配置
+    defaultConfig {
+        // 最小SDK版本
+        minSdkVersion 9
+        // 目标SDK版本
+        targetSdkVersion 23
+        // 版本号
+        versionCode 2
+        // 版本名称
+        versionName "1.4"
+        // Android Support V8 RenderScript
+        renderscriptSupportModeEnabled true
+    }
+
+    // 构建类型声明
+    buildTypes {
+        // 发布版本
+        release {
+            // 优化压缩代码
+            minifyEnabled false
+            // 混淆文件
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            // Build Config Field
+            buildConfigField "boolean", "USE_CRASHLYTICS", "false"
+            // enable crashlytics where you need
+            ext.enableCrashlytics = false
+        }
+    }
+
+    // 源码设置
+    sourceSets {
+        //1. 源码文件目录
+        main.java.srcDirs += 'src/main/widgets'
+        //2. 设置源码目录
+        //3. 设置jniLibs:JNI库目录
+        main.jniLibs.srcDirs += 'libs'
+        // Other
+        main {
+//            resources.srcDirs = ['src/main/resources']
+//            resources.srcDirs = ['src/main/widgets']
+        }
+    }
+    // 编译选项
+    compileOptions {
+        // 编译编码
+        encoding "UTF-8"
+        // 源码兼容版本
+        sourceCompatibility JavaVersion.VERSION_1_7
+        // 目标兼容版本
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    // 打包配置
+    packagingOptions {
+        // 声明Build System只获取一个META-INF/LICENSE.txt文件
+        pickFirst 'META-INF/LICENSE.txt' // picks the JavaMail license file
+    }
+    // Gradle 使用org.apache.http类库
+    useLibrary 'org.apache.http.legacy'
+    // DEX 类库选择
+    dexOptions {
+        //
+        preDexLibraries = false
+    }
+}
+// 声明代码资源库
+repositories {
+    // https://jcenter.bintray.com/
+    jcenter()
+    // 配置Maven 代码库
+    // https://maven.java.net/content/groups/public/
+    maven {
+        url "https://maven.java.net/content/groups/public/"
+    }
+    flatDir {
+        dirs '../app/commonlibs'
+    }
+}
+// 项目编译 依赖项
+dependencies {
+    // 编译 文件目录
+    // Local binary dependency
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    // 使用Zxing插件要配置targetSdkVersion 小于23
+    testCompile 'junit:junit:4.12'
+    // 编译Gradle网站上的对应代码库资源组件或本地已存在的代码库
+    // Remote binary dependency
+    //
+    // 依赖编译项目 Module dependency
+    compile 'com.android.support:support-v4:23.1.1'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile ':universal-image-loader:1.9.4'
+    compile ':ZXingCore:3.2.2'
+    compile project(':frameworkxt')
+}

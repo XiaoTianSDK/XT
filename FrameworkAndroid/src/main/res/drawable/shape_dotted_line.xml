@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="line" >
+
+    <!-- 虚线背景 -->
+    <stroke
+        android:dashGap="5px"
+        android:dashWidth="5px"
+        android:color="@color/color_dialog_split_line_xiaotian" />
+
+</shape>

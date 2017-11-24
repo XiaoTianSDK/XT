@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+    <!-- Loading -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar style="@style/StyleXiaoTian.ProgressBar.Small"/>
+
+
+            <TextView
+                style="@style/StyleXiaoTian.TextView.normal"
+                android:gravity="center"
+                android:text="@string/string_loading_waitting"/>
+        </LinearLayout>
+    </FrameLayout>
+    <!-- Error -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                style="@style/StyleXiaoTian.TextView.normal"
+                android:gravity="center"
+                android:text="@string/string_connectfail_reload"/>
+        </LinearLayout>
+    </FrameLayout>
+    <!-- Empty -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                style="@style/StyleXiaoTian.TextView.normal"
+                android:gravity="center"
+                android:text="@string/string_dataempty_reload"/>
+        </LinearLayout>
+    </FrameLayout>
+    <!--ABListView -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!-- 错误提示框 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#66000000"
+        android:gravity="center"
+        android:minHeight="40dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/StyleXiaoTian.TextView.normal"
+            android:text="@string/string_connectfail_checksetter"
+            android:textColor="@color/color_text_white_xiaotian"/>
+    </LinearLayout>
+</FrameLayout>

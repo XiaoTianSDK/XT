@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="style_dialog_theme_base_xiaotian" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="StyleXiaoTian.Dialog.NoActionBar" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="StyleXiaoTian.Dialog.NoActionBar.Light" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="StyleXiaoTian.Button.Dialog" parent="@android:style/Widget.Holo.Button.Borderless.Small"></style>
+
+    <style name="StyleXiaoTian.Button.Dialog.Light" parent="@android:style/Widget.Holo.Light.Button.Borderless.Small"></style>
+
+</resources>

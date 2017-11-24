@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Animation"/>
+
+    <style name="Animation.Activity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/set_push_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/set_push_right_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/set_push_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/set_push_left_out</item>
+    </style>
+
+    <style name="Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/set_push_top_in_dialog</item>
+        <item name="android:windowExitAnimation">@anim/set_push_top_out_dialog</item>
+    </style>
+
+    <style name="AppTheme" parent="android:Theme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AppTheme.Light" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <style name="WidthActionBar" parent="android:Theme.WithActionBar">
+    </style>
+
+    <style name="NoActionBar" parent="android:Theme.NoTitleBar"></style>
+
+    <style name="NoActionBar.Wallpaper" parent="android:Theme.Wallpaper.NoTitleBar"></style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="popwindown_btn">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="StyleProgressBar" parent="@style/Widget.AppCompat.ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+</resources>

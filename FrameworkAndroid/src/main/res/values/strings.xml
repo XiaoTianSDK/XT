@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FrameworkAndroid</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- XZingCode -->
+    <string name="Yes">Yes</string>
+    <string name="button_ok">OK</string>
+    <string name="message">Message</string>
+    <string name="scanQRTip">"Scanning QR Code &#8230;"</string>
+    <string name="result_text">Found plain text</string>
+    <string name="msg_intent_failed">Sorry, the requested application could not be launched. The barcode contents may be invalid.</string>
+    <string name="msg_not_our_results">You are leaving this application. The search results you will see are not related to this application.</string>
+    <string name="msg_encode_contents_failed">Could not encode a barcode from the data provided.</string>
+    <string name="msg_encode_barcode_failed">Could not generate the requested barcode.</string>
+
+</resources>

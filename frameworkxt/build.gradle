@@ -1,0 +1,26 @@
+// 应用编译插件: Java 编译器
+apply plugin: 'java'
+
+// 源码兼容性: 1.7
+sourceCompatibility = JavaVersion.VERSION_1_7
+
+// 声明 Java 编译器编码
+compileJava.options.encoding = 'UTF-8'
+
+// 声明代码资源库
+repositories {
+    jcenter()
+    // 配置Maven 代码库
+    // maven {
+    //    url "https://maven.java.net/content/groups/public/"
+    // }
+    flatDir {
+        dirs '../app/repositories'
+    }
+}
+// 依赖项目声明
+dependencies {
+    // 编译 jar文件列表 (dir:目录,include:包含对象)
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //
+}
